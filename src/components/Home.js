@@ -1,8 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import NavBar from './NavBar';
-import {connect} from 'react-redux';
+import changeFilter from '../redux/filter/filterActions';
 
-const Home = ({filter}) => (
+const Home = ({ filter }) => (
   <div>
     <div>
       <NavBar />
@@ -13,8 +14,14 @@ const Home = ({filter}) => (
   </div>
 );
 
-const mapStateToProps = (state) => ({
-  filter: state.filter,
+const mapStateToProps = state => ({
+  filter: state.filterStore.filter,
 });
 
-export default Home;
+const mapDispatchToProps = dispatch => ({
+  changeFilter: filter => {
+    dispatch(changeFilter(filter));
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
