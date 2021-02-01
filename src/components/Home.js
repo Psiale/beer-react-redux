@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from './NavBar';
+import {connect} from 'react-redux';
 
-const Home = () => (
+const Home = ({filter}) => (
   <div>
     <div>
       <NavBar />
@@ -11,5 +12,9 @@ const Home = () => (
     </div>
   </div>
 );
+
+const mapStateToProps = (state) => ({
+  filter: state.filter,
+});
 
 export default Home;
