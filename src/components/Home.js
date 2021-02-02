@@ -5,6 +5,7 @@ import Filter from './Filter';
 import changeFilter from '../redux/filter/filterActions';
 import fetchAllBeers from '../redux';
 import Beer from './Beer';
+import { Link } from 'react-router-dom';
 
 const Home = ({
   changeFilter, filter, items, fetchAllBeers,
@@ -25,6 +26,7 @@ const Home = ({
       return beer.name.match(rgx);
     });
   };
+
   useEffect(() => {
     fetchAllBeers();
   }, []);
@@ -39,9 +41,10 @@ const Home = ({
         getBeersFiltered(items, filter).map(beer => (
           <>
             <Beer
-              key={beer.name}
+              key={beer.id}
               beer={{
                 name: beer.name,
+                abv: beer.abv,
                 tagline: beer.tagline,
                 description: beer.description,
                 image_url: beer.image_url,
