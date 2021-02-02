@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 const categories = [
   'All',
   'Pale Ale',
-  'Blonde Ale',
+  'Pale',
   'Lager',
   'Porter',
   'Wheat',
   'Stout',
   'IPA',
+  'IMP',
 ];
 
 const CategoryFilter = ({ handleFilterChange }) => (

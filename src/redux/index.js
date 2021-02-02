@@ -1,3 +1,3 @@
-import { fetchBeers } from './item/itemActions';
+import { fetchAllBeers } from './item/itemActions';
 
-export default fetchBeers;
+export default fetchAllBeers;

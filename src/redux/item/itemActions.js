@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { getAll } from '../../api/helpers';
 
 import { FETCH_ITEM_FAILURE, FETCH_ITEM_DATA_SUCCESS, FETCH_ITEM_REQUEST } from './itemTypes';
 
@@ -16,9 +16,9 @@ export const fetchItemRequest = () => ({
   type: FETCH_ITEM_REQUEST,
 });
 
-export const fetchBeers = () => dispatch => {
+export const fetchAllBeers = () => dispatch => {
   dispatch(fetchItemRequest);
-  axios.get('https://api.punkapi.com/v2/beers?page=1&per_page=80').then(response => {
+  getAll().then(response => {
     const items = response.data;
     // eslint-disable-next-line no-console
     console.log(response.data);

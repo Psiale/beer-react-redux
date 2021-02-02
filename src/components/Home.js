@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import changeFilter from '../redux/filter/filterActions';
-import fetchBeers from '../redux';
+import fetchAllBeers from '../redux';
 import Beer from './Beer';
 
 const Home = ({
-  changeFilter, filter, items, fetchBeers,
+  changeFilter, filter, items, fetchAllBeers,
 }) => {
   const handleFilterChange = event => {
     changeFilter(event.target.value);
@@ -26,7 +26,7 @@ const Home = ({
     });
   };
   useEffect(() => {
-    fetchBeers();
+    fetchAllBeers();
   }, []);
   return (
     <div>
@@ -67,7 +67,7 @@ Home.propTypes = {
       foodPairing: PropTypes.array.isRequired,
     }),
   ).isRequired,
-  fetchBeers: PropTypes.func.isRequired,
+  fetchAllBeers: PropTypes.func.isRequired,
   changeFilter: PropTypes.func.isRequired,
 };
 
@@ -80,7 +80,7 @@ const mapDispatchToProps = dispatch => ({
   changeFilter: filter => {
     dispatch(changeFilter(filter));
   },
-  fetchBeers: () => dispatch(fetchBeers()),
+  fetchAllBeers: () => dispatch(fetchAllBeers()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
