@@ -1,4 +1,4 @@
-const Beer = (name, tagline, description, imageUrl, foodPairing) => ({
+const Beer = (id, name, tagline, description, imageUrl, foodPairing) => ({
   name, tagline, description, imageUrl, foodPairing,
 });
 

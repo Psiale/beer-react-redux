@@ -20,7 +20,9 @@
       "import/no-unresolved": "off",
       "no-shadow": "off",
       "arrow-parens": ["error", "as-needed"],
-      "max-len": "off"
+      "max-len": "off",
+      "react/forbid-prop-types": "off",
+      "camelcase": "off"
     },
     "ignorePatterns": [
       "dist/",
