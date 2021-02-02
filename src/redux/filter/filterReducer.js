@@ -6,7 +6,7 @@ const initialState = {
 const filterReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_FILTER:
-      if (action.payload === 'ALL') {
+      if (action.payload === 'all') {
         return {
           ...state,
           filter: '',

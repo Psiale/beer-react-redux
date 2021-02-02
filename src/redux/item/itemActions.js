@@ -18,7 +18,7 @@ export const fetchItemRequest = () => ({
 
 export const fetchBeers = () => dispatch => {
   dispatch(fetchItemRequest);
-  axios.get('https://api.punkapi.com/v2/beers?page=2&per_page=80').then(response => {
+  axios.get('https://api.punkapi.com/v2/beers?page=1&per_page=80').then(response => {
     const items = response.data;
     // eslint-disable-next-line no-console
     console.log(response.data);

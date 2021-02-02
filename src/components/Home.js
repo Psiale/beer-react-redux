@@ -14,10 +14,16 @@ const Home = ({
   };
 
   const getBeersFiltered = (arr, filter) => {
-    if (filter === '') {
+    if (filter === 'All') {
       return arr;
     }
-    return arr.filter(beer => beer.name === filter);
+
+    const rgx = new RegExp(filter, 'i');
+    return arr.filter(beer => {
+      // eslint-disable-next-line no-console
+      console.log(beer.name.match(rgx));
+      return beer.name.match(rgx);
+    });
   };
   useEffect(() => {
     fetchBeers();
