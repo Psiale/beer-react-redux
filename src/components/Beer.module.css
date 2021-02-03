@@ -5,11 +5,14 @@
   display: flex;
   border: 0.5px solid #20202c;
   border-radius: 25px;
+  -webkit-box-shadow: 5px 2px 11px -1px rgba(32, 32, 44, 1);
+  -moz-box-shadow: 5px 2px 11px -1px rgba(32, 32, 44, 1);
+  box-shadow: 5px 2px 11px -1px rgba(32, 32, 44, 1);
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #15151f;
-  margin: 10px 0;
+  margin: 15px;
   padding: 40px 15px;
 }
 
@@ -52,5 +55,6 @@
 .tagline > span {
   color: #20202c;
   background-color: rgb(238, 255, 0);
+  border-radius: 5px;
   padding: 0 5px;
 }

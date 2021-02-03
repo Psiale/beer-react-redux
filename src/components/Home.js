@@ -46,7 +46,6 @@ const Home = ({
               category={filter}
               beer={{
                 name: beer.name,
-                abv: beer.abv,
                 tagline: beer.tagline,
                 image_url: beer.image_url,
               }}

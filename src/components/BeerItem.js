@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 
 const BeerItem = ({ item }) => {
   const {
-    name, tagline, abv, description, image_url, food_pairing,
+    name, tagline, description, image_url, food_pairing,
   } = item;
   return (
     <div className={styles.mainContainer}>
@@ -16,40 +16,34 @@ const BeerItem = ({ item }) => {
             <img className={styles.image} src={image_url} alt="" />
           </div>
           <div className={styles.imgInfo}>
-            <p>
-              food Pairing:
-            </p>
-            {food_pairing.map(food => (
-              <h3 key={food}>
-                <span>* </span> {food}
-              </h3>
-            ))}
+            <div className={styles.name}>
+              <p>
+                {name}
+              </p>
+            </div>
+            <div>
+              <span className={styles.tagline}>
+                {tagline}
+              </span>
+            </div>
           </div>
         </div>
         <div className={styles.itemInfo}>
-          <div>
-            <h2>
-              Tagline:
-            </h2>
-            {tagline}
-          </div>
-          <div>
-            <h2>
-              Alcohol Perecentage:
-            </h2>
-            {abv}
-          </div>
-          <div>
-            <h2>
-              Description:
-            </h2>
+          <div className={styles.description}>
+            <p>
+              Description
+            </p>
             {description}
           </div>
-          <div className={styles.something}>
-            <h2>
-              Name:
-            </h2>
-            {name}
+          <div className={styles.foodPairing}>
+            <p>
+              Food Pairing
+            </p>
+            {food_pairing.map(food => (
+              <div key={food}>
+                {food}
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -64,7 +58,6 @@ BeerItem.propTypes = {
   item: PropTypes.shape({
     name: PropTypes.string.isRequired,
     tagline: PropTypes.string.isRequired,
-    abv: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image_url: PropTypes.string.isRequired,
     food_pairing: PropTypes.array.isRequired,
