@@ -1,0 +1,38 @@
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.navBar {
+  height: 40px;
+}
+
+.imageContainer,
+.itemInfo {
+  width: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imgInfo {
+  width: 40%;
+}
+
+.image {
+  width: 50px;
+  height: 100px;
+}
