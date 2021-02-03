@@ -1,0 +1,14 @@
+html,
+body {
+  font-family: 'RobotoSlab', sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  width: 100%;
+}

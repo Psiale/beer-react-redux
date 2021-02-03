@@ -1,0 +1,84 @@
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.itemContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.imageContainer,
+.itemInfo,
+.navBar {
+  width: 95%;
+}
+
+.description,
+.foodPairing {
+  padding: 0 20% 0 20px;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  background-color: #15151f;
+}
+
+.imageContainer {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: #100f1a;
+}
+
+.navBar {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+}
+
+.image {
+  position: absolute;
+  height: 46vh;
+  right: -22px;
+  top: 0;
+}
+
+.name,
+.tagline {
+  letter-spacing: 1px;
+  padding-left: 20px;
+}
+
+.imageChildContainer {
+  height: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 25px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-family: 'Ruda', sans-serif;
+  color: rgb(238, 255, 0);
+}

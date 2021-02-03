@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('RobotoSlab-Light.ttf') format('ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruda';
+  src: url('Ruda-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url('Oswald-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Light';
+  src: url('Oswald-Light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+} */

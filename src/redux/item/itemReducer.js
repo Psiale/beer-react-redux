@@ -1,9 +1,11 @@
+/* eslint-disable no-console */
 import { FETCH_ITEM_FAILURE, FETCH_ITEM_DATA_SUCCESS, FETCH_ITEM_REQUEST } from './itemTypes';
 
 const initialState = {
   loading: false,
   items: [],
   error: '',
+  item: null,
 };
 
 const itemReducer = (state = initialState, action) => {
@@ -28,6 +30,13 @@ const itemReducer = (state = initialState, action) => {
         loading: false,
         items: action.payload,
         error: '',
+      };
+
+    case 'GET_ITEM_ID':
+      console.log(`this is the payload: ${action.payload.name}`);
+      return {
+        ...state,
+        item: action.payload,
       };
 
     default: return state;
