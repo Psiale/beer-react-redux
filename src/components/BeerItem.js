@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { connect } from 'react-redux';
 import NavBar from './NavBar';
 
@@ -10,16 +11,40 @@ const BeerItem = ({ item }) => {
   return (
     <div>
       <div>
-        <div>{name}</div>
-        <div>{tagline}</div>
-        <div>{abv}</div>
-        <div>{description}</div>
+        <div>
+          <h2>
+            Name:
+          </h2>
+          {name}
+        </div>
+        <div>
+          <h2>
+            Tagline:
+          </h2>
+          {tagline}
+        </div>
+        <div>
+          <h2>
+            Alcohol Perecentage:
+          </h2>
+          {abv}
+        </div>
+        <div>
+          <h2>
+            Description:
+          </h2>
+          {description}
+        </div>
         <img src={image_url} alt="" />
         <div>
+          <h2>
+            Ingredients:
+          </h2>
           {food_pairing.map(food => (
-            <p key={food}>
+            <h3 key={food}>
+              *
               {food}
-            </p>
+            </h3>
           ))}
         </div>
       </div>

@@ -8,6 +8,8 @@ import { getSingleItem } from '../redux/item/itemActions';
 import fetchAllBeers from '../redux';
 import getItemsFiltered from '../utils';
 import Beer from './Beer';
+import buildLoader from './Loader';
+import styles from './Home.module.css';
 
 const Home = ({
   changeFilter, filter, items, fetchAllBeers, loading, getSingleItem,
@@ -26,14 +28,15 @@ const Home = ({
     fetchAllBeers(items);
   }, []);
   return (
-    (loading) ? <p>Loading </p>
+    (loading) ? buildLoader()
       : (
-        <div>
+        <div className={styles.mainContainer}>
+          <div className={styles.header}>
+            BrewDogs Beer Catalogue
+            <div className={styles.transparency} />
+          </div>
           <Filter handleFilterChange={handleFilterChange} />
-          <p>
-            Hello from home;
-          </p>
-          <div>
+          <div className={styles.beerContainer}>
             {
         getItemsFiltered(items, filter).map(beer => (
           <>

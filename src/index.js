@@ -4,12 +4,16 @@ import ReactDOM from 'react-dom';
 import Routes from './Routes';
 import reportWebVitals from './reportWebVitals';
 import store from './redux/store';
+import styles from './index.module.css';
 
+// dispatch items from here.
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <Routes />
-    </Provider>
+    <div className={styles.mainContainer}>
+      <Provider store={store}>
+        <Routes />
+      </Provider>
+    </div>
   </React.StrictMode>,
   document.getElementById('root'),
 );
