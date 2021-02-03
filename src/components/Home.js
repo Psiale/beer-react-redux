@@ -43,13 +43,12 @@ const Home = ({
             <Beer
               key={beer.id}
               handleOnClick={() => handleOnClick(beer)}
+              category={filter}
               beer={{
                 name: beer.name,
                 abv: beer.abv,
                 tagline: beer.tagline,
-                description: beer.description,
                 image_url: beer.image_url,
-                food_pairing: beer.food_pairing,
               }}
             />
           </>

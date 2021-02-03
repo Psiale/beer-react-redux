@@ -1,0 +1,53 @@
+.mainContainer {
+  width: 350px;
+  position: relative;
+  max-height: 600px;
+  display: flex;
+  border: 0.5px solid #20202c;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #15151f;
+  margin: 10px 10px;
+  padding: 40px 15px;
+}
+
+.image {
+  width: 70px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.name,
+.abv,
+.tagline {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  margin: 5px;
+  color: white;
+}
+
+.name {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.abv {
+  width: 100%;
+  display: flex;
+}
+
+.category {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.tagline > span {
+  color: #20202c;
+  background-color: rgb(238, 255, 0);
+}

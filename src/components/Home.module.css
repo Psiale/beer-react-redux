@@ -12,9 +12,8 @@
   height: 300px;
   width: 100%;
   line-height: 300px;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
-  z-index: 10;
   color: white;
   background: url('../assets/brewDogs.jpg') no-repeat;
   background-size: cover;
