@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.select {
+  width: 100%;
+  height: min-content;
+  background-color: rgb(37, 37, 37);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  padding: 5px 0;
+  text-align-last: center;
+}
+
+.option {
+  outline: none;
+}

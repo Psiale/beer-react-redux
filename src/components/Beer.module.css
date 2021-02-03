@@ -14,8 +14,8 @@
 }
 
 .image {
-  width: 70px;
-  height: 300px;
+  width: 30px;
+  height: 100px;
   margin-bottom: 15px;
 }
 
@@ -23,31 +23,34 @@
 .abv,
 .tagline {
   width: 100%;
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   margin: 5px;
   color: white;
 }
 
 .name {
-  font-size: 35px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .abv {
   width: 100%;
   display: flex;
+  font-size: 25px;
 }
 
 .category {
   position: absolute;
   left: 10px;
   top: 10px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 
 .tagline > span {
   color: #20202c;
   background-color: rgb(238, 255, 0);
+  padding: 0 5px;
 }

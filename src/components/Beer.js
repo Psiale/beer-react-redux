@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Beer.module.css';
@@ -58,8 +57,7 @@ const Beer = ({ beer, handleOnClick, category }) => {
       <img className={styles.image} src={image_url} alt="" />
       <div className={styles.name}>{name}</div>
       <div className={styles.abv}>
-        Alcohol By Volume:
-        {abv}
+        {abv} ABV
       </div>
       <div className={styles.tagline}>
         <span>

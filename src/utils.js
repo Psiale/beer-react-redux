@@ -1,4 +1,4 @@
-const getItemsFiltered = (arr, filter) => {
+export const getItemsFiltered = (arr, filter) => {
   if (filter === 'All') {
     return arr;
   }
@@ -7,4 +7,7 @@ const getItemsFiltered = (arr, filter) => {
   return arr.filter(beer => beer.name.match(rgx));
 };
 
-export default getItemsFiltered;
+export const hideOnScroll = (prev, fn) => {
+  // eslint-disable-next-line no-unused-expressions
+  (window.scrollY > prev) ? fn(true) : fn(false);
+};
