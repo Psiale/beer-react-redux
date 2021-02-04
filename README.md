@@ -37,7 +37,7 @@ The premise of this project is to build a MVC calculator for Math-magicians a fi
 4. Go the the project root and type ``` yarn/npm run start ```
 
 ### 🚀 Live version
-[visit the page](https://psiale-react-calculator.herokuapp.com)
+[visit the page](https://beer-react-redux.herokuapp.com)
 
 
 

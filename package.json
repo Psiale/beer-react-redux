@@ -1,4 +1,4 @@
-{ "homepage": "https://Psiale.github.io/beer-react-redux",
+{
   "name": "beer-react-redux",
   "version": "0.1.0",
   "private": true,
