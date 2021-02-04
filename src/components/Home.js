@@ -6,7 +6,7 @@ import Filter from './Filter';
 import changeFilter from '../redux/filter/filterActions';
 import { getSingleItem } from '../redux/item/itemActions';
 import fetchAllBeers from '../redux';
-import { getItemsFiltered } from '../utils';
+import getItemsFiltered from '../utils';
 import Beer from './Beer';
 import buildLoader from './Loader';
 import styles from './Home.module.css';
@@ -78,7 +78,6 @@ Home.propTypes = {
 
 const mapStateToProps = state => ({
   items: state.itemsStore.items,
-  error: state.itemsStore.error,
   loading: state.itemsStore.loading,
   filter: state.filterStore.filter,
 });

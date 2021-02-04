@@ -8,7 +8,7 @@ const buildLoader = () => (
     <Loader
       className={styles.loader}
       type="Puff"
-      color="#00BFFF"
+      color="rgb(18, 211, 236)"
       height={300}
       width={300}
       timeout={10000}

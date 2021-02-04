@@ -33,7 +33,6 @@ const itemReducer = (state = initialState, action) => {
       };
 
     case 'GET_ITEM_ID':
-      console.log(`this is the payload: ${action.payload.name}`);
       return {
         ...state,
         item: action.payload,
