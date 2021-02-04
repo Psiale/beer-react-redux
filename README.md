@@ -1,12 +1,27 @@
-# 🧮 React Calculator
+# 🍺🍻 BrewDogs Beer Catalogue
 
 This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/).
 
-This project focuses on creating a calculator with ReactJS.
+This project focuses on creating a Beers catalogue SPA with Redux for the state managment.
 
 ## 🧮 The Project Brief
 
-The premise of this project is to build a MVC calculator for Math-magicians a fictional company based on france.
+The premise of this project is to create a website that allows the user to see and filter through a list of Beers, click on one of the elements and go to a detailed product page.
+
+## 🖼️ Preview
+
+### Home Page
+![Home Page](./src/assets/home.jpg)
+
+<br/>
+
+### Filtered Beers
+![Filtered Beer](./src/assets/filter.jpg)
+
+<br/>
+
+### Detail Product Page
+![Item](./src/assets/item.jpg)
 
 ## 🧬 Technologies & Languages Used
 
@@ -17,6 +32,7 @@ The premise of this project is to build a MVC calculator for Math-magicians a fi
 - npm
 - CSS
 - ES6
+- Redux
 
 ## 🔰 Setup & Usage
 
