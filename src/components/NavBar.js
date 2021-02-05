@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.linkContainer}>
-        <Link to="/">Back to Home </Link>
+        <Link data-testid="link-test" to="/">Back to Home </Link>
       </div>
     </div>
   );
