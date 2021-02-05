@@ -39,18 +39,20 @@ const Home = ({
           <div className={styles.beerContainer}>
             {
         getItemsFiltered(items, filter).map(beer => (
-          <>
+          <div key={beer.id}>
             <Beer
-              key={beer.id}
+              key={beer.id.toString()}
               handleOnClick={() => handleOnClick(beer)}
               category={filter}
               beer={{
+                id: beer.id,
+                abv: beer.abv,
                 name: beer.name,
                 tagline: beer.tagline,
                 image_url: beer.image_url,
               }}
             />
-          </>
+          </div>
         ))
         }
           </div>
@@ -67,8 +69,8 @@ Home.propTypes = {
       name: PropTypes.string.isRequired,
       tagline: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      imageUrl: PropTypes.string.isRequired,
-      foodPairing: PropTypes.array.isRequired,
+      imageUrl: PropTypes.string,
+      foodPairing: PropTypes.array,
     }),
   ).isRequired,
   fetchAllBeers: PropTypes.func.isRequired,

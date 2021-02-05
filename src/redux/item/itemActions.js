@@ -13,13 +13,12 @@ export const fetchItemDataSuccess = items => ({
   payload: items,
 });
 
-export const getSingleItem = item => {
-  console.log(`this is the beer: ${item}`);
-  return {
+export const getSingleItem = item => (
+  {
     type: 'GET_ITEM_ID',
     payload: item,
-  };
-};
+  }
+);
 
 export const fetchItemRequest = () => ({
   type: FETCH_ITEM_REQUEST,

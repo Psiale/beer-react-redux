@@ -70,10 +70,10 @@ const Beer = ({ beer, handleOnClick, category }) => {
 Beer.propTypes = {
   beer: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     tagline: PropTypes.string.isRequired,
-    abv: PropTypes.string.isRequired,
-    image_url: PropTypes.string.isRequired,
+    abv: PropTypes.number.isRequired,
+    image_url: PropTypes.string,
   }).isRequired,
   handleOnClick: PropTypes.func.isRequired,
   category: PropTypes.string,

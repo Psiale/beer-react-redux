@@ -27,7 +27,8 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.beerContainer {
+.beerContainer,
+.beerContainer > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,4 +38,8 @@
   border: 0.5px solid #100f1adc;
   border-radius: 25px;
   background-color: #100f1a;
+}
+
+.beerContainer > div {
+  width: 100%;
 }
