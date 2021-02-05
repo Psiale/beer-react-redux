@@ -61,7 +61,7 @@ BeerItem.propTypes = {
     tagline: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image_url: PropTypes.string.isRequired,
-    food_pairing: PropTypes.array.isRequired,
+    food_pairing: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
 

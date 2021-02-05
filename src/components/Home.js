@@ -71,7 +71,7 @@ Home.propTypes = {
       tagline: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       imageUrl: PropTypes.string,
-      foodPairing: PropTypes.array,
+      foodPairing: PropTypes.arrayOf(PropTypes.string),
     }),
   ).isRequired,
   fetchAllBeers: PropTypes.func.isRequired,
