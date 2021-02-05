@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styles from './BeerItem.module.css';
-import NavBar from './NavBar';
+import NavBar from '../components/NavBar';
 
 const BeerItem = ({ item }) => {
   const {

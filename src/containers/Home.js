@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
-import Filter from './Filter';
+import Filter from '../components/Filter';
 import changeFilter from '../redux/filter/filterActions';
 import { getSingleItem } from '../redux/item/itemActions';
 import fetchAllBeers from '../redux';
 import getItemsFiltered from '../utils';
-import Beer from './Beer';
-import buildLoader from './Loader';
+import Beer from '../components/Beer';
+import buildLoader from '../components/Loader';
 import styles from './Home.module.css';
 
 const Home = ({
