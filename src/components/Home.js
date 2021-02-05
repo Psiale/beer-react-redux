@@ -49,7 +49,8 @@ const Home = ({
                 abv: beer.abv,
                 name: beer.name,
                 tagline: beer.tagline,
-                image_url: beer.image_url,
+                imageUrl: beer.image_url,
+                foodPairing: beer.food_pairing,
               }}
             />
           </div>
