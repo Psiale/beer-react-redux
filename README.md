@@ -52,11 +52,15 @@ The premise of this project is to create a website that allows the user to see a
 
 4. Go the the project root and type ``` yarn/npm run start ```
 
-### 🚀 Live version
+## 🚀 Live version
 [visit the page](https://beer-react-redux.herokuapp.com)
 
 
+## Testing
 
+1. Donwload the project.
+2. open a terminal and run ```npm test ```.
+3. Check the output.
 ## 🛎️ Contributions, Issues & Forking
 
 If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Calculator](https://github.com/Psiale/beer-react-redux/issues) page.
