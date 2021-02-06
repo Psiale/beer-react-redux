@@ -56,7 +56,7 @@ The premise of this project is to create a website that allows the user to see a
 [visit the page](https://beer-react-redux.herokuapp.com)
 
 
-## Testing
+## 🧫🔬 Testing
 
 1. Donwload the project.
 2. open a terminal and run ```npm test ```.
