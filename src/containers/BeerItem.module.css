@@ -150,3 +150,11 @@ p {
     width: 92%;
   }
 }
+
+@media (min-width: 800px) {
+  .description,
+  .tagline,
+  .foodPairing > div {
+    font-size: 2vw;
+  }
+}
