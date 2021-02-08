@@ -82,3 +82,71 @@ p {
   font-family: 'Ruda', sans-serif;
   color: rgb(238, 255, 0);
 }
+
+/* media query to change the grid into a 50/50 one */
+
+@media (min-width: 768px) {
+  .imageContainer,
+  .itemInfo {
+    width: 47%;
+  }
+
+  .itemInfo,
+  .itemContainer {
+    height: 70vh;
+  }
+
+  .itemContainer {
+    width: 95%;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .imageChildContainer,
+  .imageContainer {
+    height: 100%;
+  }
+
+  .imageContainer {
+    position: initial;
+  }
+
+  .image {
+    position: initial;
+    height: 80%;
+  }
+
+  .description,
+  .foodPairing,
+  .imageChildContainer {
+    padding: 0 10px;
+  }
+
+  .imgInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 35px;
+  }
+
+  .name,
+  .tagline {
+    padding: 0;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 25px;
+  }
+
+  .navBar {
+    width: 92%;
+  }
+}
