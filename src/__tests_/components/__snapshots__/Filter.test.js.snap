@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="header"
+>
+  <select
+    className="select"
+    id="booksCategories"
+    name="bookCategories"
+    onChange={[Function]}
+  >
+    <option
+      className="option"
+    >
+      All
+    </option>
+    <option
+      className="option"
+    >
+      Pale Ale
+    </option>
+    <option
+      className="option"
+    >
+      Pale
+    </option>
+    <option
+      className="option"
+    >
+      Lager
+    </option>
+    <option
+      className="option"
+    >
+      Porter
+    </option>
+    <option
+      className="option"
+    >
+      Wheat
+    </option>
+    <option
+      className="option"
+    >
+      Stout
+    </option>
+    <option
+      className="option"
+    >
+      IPA
+    </option>
+    <option
+      className="option"
+    >
+      IMP
+    </option>
+  </select>
+</div>
+`;

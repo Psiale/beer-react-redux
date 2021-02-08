@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
-import Filter from './Filter';
+import Filter from '../components/Filter';
 import changeFilter from '../redux/filter/filterActions';
 import { getSingleItem } from '../redux/item/itemActions';
 import fetchAllBeers from '../redux';
-import { getItemsFiltered } from '../utils';
-import Beer from './Beer';
-import buildLoader from './Loader';
+import getItemsFiltered from '../utils';
+import Beer from '../components/Beer';
+import buildLoader from '../components/Loader';
 import styles from './Home.module.css';
 
 const Home = ({
@@ -39,18 +39,21 @@ const Home = ({
           <div className={styles.beerContainer}>
             {
         getItemsFiltered(items, filter).map(beer => (
-          <>
+          <div key={beer.id}>
             <Beer
-              key={beer.id}
+              key={beer.id.toString()}
               handleOnClick={() => handleOnClick(beer)}
               category={filter}
               beer={{
+                id: beer.id,
+                abv: beer.abv,
                 name: beer.name,
                 tagline: beer.tagline,
-                image_url: beer.image_url,
+                imageUrl: beer.image_url,
+                foodPairing: beer.food_pairing,
               }}
             />
-          </>
+          </div>
         ))
         }
           </div>
@@ -67,8 +70,8 @@ Home.propTypes = {
       name: PropTypes.string.isRequired,
       tagline: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      imageUrl: PropTypes.string.isRequired,
-      foodPairing: PropTypes.array.isRequired,
+      imageUrl: PropTypes.string,
+      foodPairing: PropTypes.arrayOf(PropTypes.string),
     }),
   ).isRequired,
   fetchAllBeers: PropTypes.func.isRequired,
@@ -78,7 +81,6 @@ Home.propTypes = {
 
 const mapStateToProps = state => ({
   items: state.itemsStore.items,
-  error: state.itemsStore.error,
   loading: state.itemsStore.loading,
   filter: state.filterStore.filter,
 });

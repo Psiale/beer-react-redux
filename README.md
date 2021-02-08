@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# 🍺🍻 BrewDogs Beer Catalogue
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/).
 
-## Available Scripts
+This project focuses on creating a Beers catalogue SPA with Redux for the state managment.
 
-In the project directory, you can run:
+## 🧮 The Project Brief
 
-### `yarn start`
+The premise of this project is to create a website that allows the user to see and filter through a list of Beers, click on one of the elements and go to a detailed product page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🖼️ Preview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Home Page
+![Home Page](./src/assets/home.jpg)
 
-### `yarn test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Filtered Beers
+![Filtered Beer](./src/assets/filter.jpg)
 
-### `yarn build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Detail Product Page
+![Item](./src/assets/item.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧬 Technologies & Languages Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- npm
+- CSS
+- ES6
+- Redux
 
-### `yarn eject`
+## 🔰 Setup & Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### ⌨️ Local 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Go to the [repository](https://github.com/Psiale/beer-react-redux) and press on the green button that says ```code```
+2. Copy the link and open a terminal 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    windows:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    ```windows tab + x ```
 
-## Learn More
+    mac: Press ```CmdSpace``` to open spotlight search and type ```terminal``` and hit ```return ```.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Go to the folder where you gonna clone the repositorie and type ```git clone PASTE THE LINK``` and hit ```Enter ```
 
-### Code Splitting
+4. Go the the project root and type ``` yarn/npm run start ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 Live version
+[visit the page](https://beer-react-redux.herokuapp.com)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🧫🔬 Testing
 
-### Making a Progressive Web App
+1. Donwload the project.
+2. open a terminal and run ```npm test ```.
+3. Check the output.
+## 🛎️ Contributions, Issues & Forking
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Calculator](https://github.com/Psiale/beer-react-redux/issues) page.
 
-### Advanced Configuration
+If you want to make your own changes, modifications or improvements to our project, go ahead and Fork it!
+1. [Fork it](https://github.com/Psiale/beer-react-redux/fork)
+2. Create your working branch (git checkout -b [choose-a-name])
+3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
+4. Push to the branch (git push origin [chosen-name])
+5. Create a new Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤟🏽😄 😛🤙🏾  Creator
 
-### Deployment
+Alexis Sanchez - [Github](https://github.com/Psiale)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🙌🏾 Show Your Support
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!

@@ -4,7 +4,7 @@ import styles from './Beer.module.css';
 
 const Beer = ({ beer, handleOnClick, category }) => {
   const {
-    name, tagline, abv, image_url,
+    name, tagline, abv, imageUrl,
   } = beer;
 
   const filterColor = filter => {
@@ -47,16 +47,17 @@ const Beer = ({ beer, handleOnClick, category }) => {
     }
   };
   return (
-    <div className={styles.mainContainer} onClick={handleOnClick}>
+    <div aria-hidden="true" className={styles.mainContainer} onClick={handleOnClick} onKeyPress={handleOnClick}>
       {(category !== 'All') ? (
         <div className={styles.category} style={filterColor(category)}>
           {category}
         </div>
       ) : null }
-      <img className={styles.image} src={image_url} alt="" />
+      <img className={styles.image} src={imageUrl} alt="" />
       <div className={styles.name}>{name}</div>
       <div className={styles.abv}>
-        {abv} ABV
+        {abv}
+        ABV
       </div>
       <div className={styles.tagline}>
         <span>
@@ -70,10 +71,10 @@ const Beer = ({ beer, handleOnClick, category }) => {
 Beer.propTypes = {
   beer: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     tagline: PropTypes.string.isRequired,
-    abv: PropTypes.string.isRequired,
-    image_url: PropTypes.string.isRequired,
+    abv: PropTypes.number.isRequired,
+    imageUrl: PropTypes.string,
   }).isRequired,
   handleOnClick: PropTypes.func.isRequired,
   category: PropTypes.string,

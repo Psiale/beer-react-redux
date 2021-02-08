@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  aria-hidden="true"
+  className="mainContainer"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+>
+  <div
+    className="category"
+    style={
+      Object {
+        "backgroundColor": "rgb(76, 246, 224)",
+      }
+    }
+  >
+    Pale Ale
+  </div>
+  <img
+    alt=""
+    className="image"
+    src="Something"
+  />
+  <div
+    className="name"
+  >
+    Beer
+  </div>
+  <div
+    className="abv"
+  >
+    18
+    ABV
+  </div>
+  <div
+    className="tagline"
+  >
+    <span>
+      Supe
+    </span>
+  </div>
+</div>
+`;
