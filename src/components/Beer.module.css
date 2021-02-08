@@ -59,3 +59,23 @@
   border-radius: 5px;
   padding: 0 5px;
 }
+
+/* media for increasing fonts for beer elements between mobile and tablet */
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .mainContainer {
+    width: 100%;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .abv {
+    font-size: 35px;
+  }
+
+  .tagline {
+    font-size: 25px;
+  }
+}

@@ -22,8 +22,8 @@ const BeerItem = ({ item }) => {
                 {name}
               </p>
             </div>
-            <div>
-              <span className={styles.tagline}>
+            <div className={styles.tagline}>
+              <span>
                 {tagline}
               </span>
             </div>
