@@ -43,3 +43,17 @@
 .beerContainer > div {
   width: 100%;
 }
+
+/* tablet */
+@media (min-width: 768px) {
+  .beerContainer > div {
+    width: 45%;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .beerContainer > div {
+    width: 30%;
+  }
+}
