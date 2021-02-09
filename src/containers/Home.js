@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -26,6 +27,7 @@ const Home = ({
 
   useEffect(() => {
     fetchAllBeers(items);
+    return () => null;
   }, []);
   return (
     (loading) ? buildLoader()
