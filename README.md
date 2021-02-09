@@ -10,18 +10,7 @@ The premise of this project is to create a website that allows the user to see a
 
 ## 🖼️ Preview
 
-### Home Page
-![Home Page](./src/assets/home.jpg)
-
-<br/>
-
-### Filtered Beers
-![Filtered Beer](./src/assets/filter.jpg)
-
-<br/>
-
-### Detail Product Page
-![Item](./src/assets/item.jpg)
+![App Preview](./src/assets/app.gif)
 
 ## 🧬 Technologies & Languages Used
 
