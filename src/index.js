@@ -1,9 +1,10 @@
 import React from 'react';
+import { PersistGate } from 'redux-persist/es/integration/react';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 import Routes from './Routes';
 import reportWebVitals from './reportWebVitals';
-import store from './redux/store';
+import { store, persistor } from './redux/store';
 import styles from './index.module.css';
 import './assets/fonts/fonts.css';
 
@@ -12,7 +13,9 @@ ReactDOM.render(
   <React.StrictMode>
     <div className={styles.mainContainer}>
       <Provider store={store}>
-        <Routes />
+        <PersistGate loading={null} persistor={persistor}>
+          <Routes />
+        </PersistGate>
       </Provider>
     </div>
   </React.StrictMode>,
