@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 import Filter from '../components/Filter';
 import changeFilter from '../redux/filter/filterActions';
 import { getSingleItem } from '../redux/item/itemActions';
+// have to import fetchAccessRequest and passed it to dispatchToProps
 import fetchAllBeers from '../redux';
 import getItemsFiltered from '../utils';
 import Beer from '../components/Beer';
